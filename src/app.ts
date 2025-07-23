@@ -16,6 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 /* ==================== Start Import Routes ==================== */
+import healthCheckRoute from "./routes/healthCheck.route.js";
+app.use("/api/health-check", healthCheckRoute);
 
 /* ==================== End Import Routes ==================== */
 
