@@ -1,0 +1,12 @@
+echo "🔍 Running lint-staged on staged files......" 
+
+npm run lint:staged
+
+echo "✅ Linting complete......" 
+echo "🔍 Checking typescript types......"
+
+tsc --noEmit
+
+echo "✅ Typescript types check complete......"
+echo "✅ All checks passed!"
+echo "🚀 Committing files......"
