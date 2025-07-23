@@ -14,3 +14,11 @@ app.use(express.json());
 
 // Middleware to parse URL-encoded bodies
 app.use(express.urlencoded({ extended: true }));
+
+/* ==================== Start Import Routes ==================== */
+
+/* ==================== End Import Routes ==================== */
+
+// error handling middleware
+import errorMiddleware from "./middlewares/error.middleware.js";
+app.use(errorMiddleware);
